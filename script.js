@@ -78,7 +78,7 @@ setAlarmButton.addEventListener("click",() => {
   newPara.classList.add("alarmTime");
   newPara.textContent = alarmHour.value+":" + alarmMin.value +":"+alarmSec.value+":"+alarmAmPm.value;
   
-  if(alarmHour.value == "Hour" && alarmMin.value == "Minutes" || alarmSec.value == "Second" || alarmAmPm.value == "AMPM"){
+  if(alarmHour.value == "Hour" || alarmMin.value == "Minutes" || alarmSec.value == "Second" || alarmAmPm.value == "AMPM"){
     alert("Please set alarm time");
   }
   else{  
