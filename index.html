@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Clock</title>
+
+    <!-- link the stylesheet of css -->
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <!-- creating a container div in body -->
+    <div id="main">
+    
+      <h1><u>My Alarm Clock</u></h1>
+      <div>
+        <!-- div to show current time -->
+        <div id="curr-date">
+          <span id="hh"></span><b>:</b>
+          <span id="mm"></span><b>:</b>
+          <span id="ss"></span><b>:</b>
+          <span id="ampm"></span>
+        </div>
+        <!-- Set Alarm section contain alarm time and set alarm button -->
+        <section id="setAlarm">
+          <form >
+            <!-- for alarm hour  -->
+            <label for="setAlarmHour"></label>
+            <select name="setAlarmHour" id="setAlarmHour" class="optionBox totalOption12">
+              <option value="Hour" selected hidden>Hour</option>
+            </select><b>:</b>
+            <!-- for alarm minute -->
+            <label for="setAlarmMin"></label>
+            <select name="setAlarmMin" id="setAlarmMin" class="optionBox totalOption60">
+              <option value="Minutes" selected hidden>Min</option>
+            </select><b>:</b>
+            <!-- for alarm second -->
+            <label for="setAlarmSec"></label>
+            <select name="setAlarmSec" id="setAlarmSec" class="optionBox totalOption60">
+              <option value="Second" selected hidden>Sec</option>
+            </select><b>:</b>
+            <!-- for AM/PM -->
+            <label for="setAlarmAmPm"></label>
+            <select name="setAlarmAmPm" id="setAlarmAmPm" class="optionBox totalOption2">
+              <option value="AMPM" selected hidden>AM/PM</option>
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </form>
+
+          <!-- set Alarm button -->
+          <button id="setAlarmButton">Set Alarm</button>
+        </section>
+        <div>
+          <!-- alarm heading -->
+          <p id="alarmHeading">Alarms</p>
+          <!-- show alarm time list -->
+          <section id="alarmList"></section>
+        </div>  
+      </div>
+    </div>
+
+   <!-- adding script.js javascript file  -->
+  <script src="script.js"></script>
+  </body>
+</html>

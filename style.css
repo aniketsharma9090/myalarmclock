@@ -1,0 +1,132 @@
+body{
+    
+    background-color: cornsilk;
+    background: radial-gradient(
+    circle,
+    rgb(230, 162, 25) 17%,
+    rgb(227, 71, 144) 73%
+  );
+    
+}
+#main {
+    background-color: chartreuse;
+    width: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    border-radius: 40px;
+    margin: 40px auto;
+    padding: 10px;
+    background: linear-gradient(
+    0deg,
+    rgba(134, 223, 224, 1) 20%,
+    rgba(79, 169, 231, 1) 74%
+  );
+    
+}
+h1 {
+    text-align: center;
+}
+/* show current time */
+#curr-date {
+    text-align: center;
+    font-size: 2rem;
+    margin: 15px;
+    padding: 10px;
+}
+/* set alarm hour , minute, second and AM/PM */
+#setAlarm{
+    display: flex;
+    justify-content: space-evenly;
+}
+.alarmListBox {
+    display: flex;
+    justify-content: space-evenly;
+}
+.optionBox {
+    height: 45px;
+    font-size: 1rem;  
+}
+/* for set alarm button */
+#setAlarmButton{
+    background: linear-gradient(
+    0deg,
+    rgb(221, 220, 219) 20%,
+    rgb(186, 201, 210) 74%
+  );
+    font-size: 1.5rem; 
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 3px;
+    
+}
+
+/* for hover on set alarm button */
+#setAlarmButton:hover{
+    background: yellow;
+}
+#alarmHeading{
+    font-size: 2rem;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+}
+
+.alarmTime{
+    display: block;
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.5rem;
+    background-color:linen;
+    border: 2px;
+    border-radius: 10px;
+}
+/* for delete button */
+.deleteButton{
+    display: block;
+    width: auto;
+    margin: 10px;
+    font-size: 20px; 
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+} 
+/* for hover on deleteButton */
+.deleteButton:hover{
+    background: red;
+}
+/* for responsive website */
+@media only screen and (max-width: 724px) {
+    #main{
+        width: 92%;
+        margin: 2% auto;
+    }
+    #setAlarm{
+        display: block;
+        text-align: center;
+        margin: 3px;       
+    }
+    form{
+        display: block;
+    }
+    .deleteButton{
+        font-size: 1.2rem;
+    }
+    .alarmTime{
+        width:auto;
+        font-size: 1.2rem; 
+        
+    }
+}
+@media only screen and (max-width: 404px) {
+    .optionBox {
+        width:21%;
+        height: 10%;
+        font-size: 1rem;  
+    }
+    .alarmTime{ 
+        font-size: 1rem;  
+    }
+}
